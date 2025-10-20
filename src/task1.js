@@ -9,5 +9,5 @@
  */
 export function multipliedByN(initialArray, multiplier) {
 
-  return initialArray;
+  return null;
 }
