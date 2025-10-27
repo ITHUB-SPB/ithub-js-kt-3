@@ -10,19 +10,19 @@ export function calculateSum(values) {
     throw new Error("Передан пустой массив");
   }
 
-  let sum = 0;
-  let hasNumbers = false;
+  let sumNum = 0;
+  let checkNumbers = false;
 
   for (let i = 0; i < values.length; i++) {
     const num = Number(values[i]);
     if (!isNaN(num)) {
-      sum += num;
-      hasNumbers = true;
+      sumNum += num;
+      checkNumbers = true;
+    }  
+  }
+  if (!checkNumbers) {
+      throw new Error("Отсутствуют численные данные в массиве!");
     }
-  }
-  if (!hasNumbers) {
-    throw new Error("Отсутствуют численные данные в массиве!");
-  }
-
-  return sum;
+    
+  return sumNum;
 }
