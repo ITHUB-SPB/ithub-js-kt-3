@@ -12,7 +12,7 @@ export function reverseArray(initialArray) {
     const resultRight = initialArray[left];
     initialArray[left] = initialArray[right];
     initialArray[right] = resultRight;
-
+    
     left++;
     right--;
   }
