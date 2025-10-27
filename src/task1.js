@@ -1,13 +1,15 @@
-/**
- * @param {number[]} initialArray - Исходный массив
- * @param {number} multiplier - Множитель
- * 
- * @returns {number[]} Новый массив
- * 
- * @description Возвращает массив с элементами, полученными 
- * перемножением всех элементов исходного массива на число
- */
-export function multipliedByN(initialArray, multiplier) {
-
-  return initialArray;
+function multipliedByN(initialArray, multiplier) {
+  const newArray = [];
+  
+  for (let i = 0; i < initialArray.length; i++) {
+    newArray.push(initialArray[i] * multiplier);
+  }
+  
+  return newArray;
 }
+
+const initial = [1, 3, 5];
+const result = multipliedByN(initial, -2);
+
+console.log(initial); // [1, 3, 5]
+console.log(result);  // [-2, -6, -10]
