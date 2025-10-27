@@ -9,9 +9,9 @@ export function reverseArray(initialArray) {
   let right = initialArray.length - 1;
 
   while (left < right) {
-    const flipover = initialArray[left];
+    const resultRight = initialArray[left];
     initialArray[left] = initialArray[right];
-    initialArray[right] = flipover;
+    initialArray[right] = resultRight;
 
     left++;
     right--;
