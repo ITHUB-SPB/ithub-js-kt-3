@@ -9,5 +9,5 @@ function reverseArray(initialArray) {
 }
 
 const data = [1, 2, 3, 4, 5];
-reverseArray(data); // [5, 4, 3, 2, 1]
-console.log(data);  // [5, 4, 3, 2, 1]
+reverseArray(data);
+console.log(data);
