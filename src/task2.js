@@ -11,13 +11,13 @@ export function calculateSum(values) {
   }
 
   let sum = 0; 
-  let validNumbers = false; // наличия допустмых чисел
+  let validNumbers = false; 
 
   for (let ix = 0; ix < values.length; ix++) {
-    const num = Number(values[ix]); // преобразование строки в число
-    if (!isNaN(num)) { // проверка допустимого числа
-      sum += num; // Добавление к сумме
-      validNumbers = true; //установка допустимого значен ия
+    const num = Number(values[ix]); 
+    if (!isNaN(num)) { 
+      sum += num; 
+      validNumbers = true; 
     }
   }
 
