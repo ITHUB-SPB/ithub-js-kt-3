@@ -14,4 +14,4 @@ function calculateSum(values) {
 
 const data = ['10','Строка','5g','15','05'];
 const result = calculateSum(data);
-console.log(result); // 30
+console.log(result);
