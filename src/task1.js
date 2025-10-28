@@ -13,3 +13,4 @@ export function multipliedByN(initialArray, multiplier) {
   }
   return initialArray;
 }
+//проверка сохранений
