@@ -11,9 +11,9 @@ export function calculateSum(values) {
     }
     let nan = 0
     for(let i = 0; i < values.length; i++) {
-        if(isNaN(values[i]))  {
-            nan++
-          }
+    if (isNaN(Number(values[i]))) {
+      nan++
+    }
     }
     if(nan === values.length) {
         throw new Error("Отсутствуют численные данные")
