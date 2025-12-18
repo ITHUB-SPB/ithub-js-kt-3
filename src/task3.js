@@ -5,10 +5,6 @@
  * @description Разворот массива на месте с выводом в консоль
  */
 export function reverseArray(initialArray) {
-  return;
-}
-
-export function reverseArray(initialArray) {
   let leftPointer = 0;
   let rightPointer = initialArray.length - 1;
 
